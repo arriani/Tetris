@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tetris</title>
+        <style>
+            canvas{
+                background: #111;
+                display: block;
+                margin: auto;
+                border: 2px solid #fff;
+            }
+
+            button{
+                cursor: pointer;
+                margin: auto;
+                border-radius: 12%;
+            }
+
+            #controls {
+                text-align: center;
+                margin-top: 14px;
+            }
+
+            #gameOver {
+                text-align: center;
+                display: none; 
+                font-size: 24px; 
+                color: red;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="tetris" width="240" height="400"></canvas>
+        <div id="controls">
+            <button id="startBtn">Start</button>
+            <button id="pauseBtn">Pauza</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+
+    
+        
+        <div id="gameOver">
+            KONIEC GRY!
+        </div>
+        
+
+        <script src="java.js"></script>
+    </body>
+</html>
